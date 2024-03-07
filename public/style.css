@@ -1,0 +1,108 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 5px;
+  }
+  
+  li {  
+    margin-bottom: 5px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+  } 
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+
+  .modal-content input{
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .modal-content button{
+    background-color: rgb(40, 133, 255);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .modal-content input:focus{
+    outline: none;
+  }
+  
+  /* Message styling */
+  .sent {
+    text-align: right;
+  }
+  
+  .message-by-me{
+    margin: 10% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+#form{
+    display: flex;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+  #input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(237, 237, 237);
+    border-radius: 30px;
+    border: none;
+    padding: 0 10px;
+    margin: 0 5px;
+  }
+
+  #input:focus{
+    outline: none;
+  }
+
+  #messages{
+    margin-bottom: 40px;
+  }
+
+  #form button{
+    background-color: #4babff;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5px;
+  }
