@@ -49,7 +49,6 @@ socket.on('chat message', (data) => {
     item.classList.add('sent');
   } else {
     item.style.color = getUsernameColor(data.username);
-    showNotification(data.username, data.message);
   }
   messagesList.appendChild(item);
   saveMessageToLocalStorage(data);
@@ -88,17 +87,4 @@ function getUsernameColor(username) {
   }
   const hue = Math.abs(hash % 360);
   return `hsl(${hue}, 50%, 50%)`;
-}
-
-// Function to show notification
-function showNotification(sender, message) {
-  if (Notification.permission === 'granted') {
-    new Notification(sender, { body: message });
-  } else if (Notification.permission !== 'denied') {
-    Notification.requestPermission().then((permission) => {
-      if (permission === 'granted') {
-        new Notification(sender, { body: message });
-      }
-    });
-  }
 }
